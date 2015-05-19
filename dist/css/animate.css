@@ -1,0 +1,56 @@
+/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+.bad-bank > li {
+  -skrollr-animation-name: animation1;
+}
+
+.dignity-text {
+  -skrollr-animation-name: animation2;
+}
+
+@-skrollr-keyframes animation1 {
+  bottom-top {
+    opacity: -.3;
+  }
+  center-bottom {
+    opacity: 1.2;
+  }
+}
+@-skrollr-keyframes animation2 {
+  bottom-top {
+    left: 250px;
+    opacity: -.3;
+  }
+  center-bottom {
+    left: 0;
+    opacity: 1.2;
+  }
+}
