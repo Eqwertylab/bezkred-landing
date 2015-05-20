@@ -202,9 +202,9 @@
           <div class="embed-responsive-item">
             <div class="flowplayer" data-ratio="0.5625">
               <video autoplay>
-                 <source type="video/webm" src="dist/video/Bezkreditoff-HD.webm">
-                 <source type="video/mp4" src="dist/video/Bezkreditoff-HD.mp4">
-                 <source type="video/ogv" src="dist/video/Bezkreditoff-HD.webm">
+                <source type="video/webm" src="dist/video/Bezkreditoff-HD.webm">
+                <source type="video/mp4" src="dist/video/Bezkreditoff-HD.mp4">
+                <source type="video/ogv" src="dist/video/Bezkreditoff-HD.webm">
               </video>
             </div>
           </div>
