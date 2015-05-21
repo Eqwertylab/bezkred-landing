@@ -739,13 +739,15 @@ input, textarea {
 // Map
 // --------------------------------------------------
 .map-wrap {
+  position: relative;
   h2 {
     text-align: center;
     font-weight: bold;
   }
   .map {
-    height: 600px;
+    height: 300px;
     margin-top: 20px;
+    z-index: 10;
   }
   .tel {
     font-size: 25px;
@@ -754,6 +756,10 @@ input, textarea {
   }
   .marker {
     font-size: 15px;
+  }
+  .contacts {
+    padding: 0 15px;
+    z-index: 20;
   }
 }
 
@@ -833,6 +839,8 @@ input, textarea {
     padding-left: 40px;
     text-decoration: none;
     margin-top: 10px;
+    opacity: 0.3;
+    transition: 0.5s opacity;
     .ql__line1 {
       display: block;
       font-weight: bold;
@@ -840,13 +848,15 @@ input, textarea {
       padding-top: 3px;
     }
     .ql__line2 {
-    display: block;
-    font-size: 0.9em;
-    line-height: 1em;
-  }
+      display: block;
+      font-size: 0.9em;
+      line-height: 1em;
+    }
+    &:hover {
+      opacity: 1;
+    }
 
 }
-
 
 
 //
@@ -859,6 +869,7 @@ input, textarea {
   width: 320px;
   overflow: hidden;
   right: -285px;
+  z-index: 30;
   .transition(opacity 0.3s);
   &:hover {
     opacity: 1 !important;

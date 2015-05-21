@@ -48,6 +48,7 @@ Map = {
 
 
 			//Инфо окно
+			/*
 			var contentString = '<div class="marker">'+
 				'<p>Санкт-Петербург <br>БЦ&nbsp;"Резон"&nbsp;ул.Всеволода&nbsp;Вишневского&nbsp;12а</p>'+
 				'<p>График работы:<br> Пн-Пт, с 10:00 до 20:00</p>'+
@@ -61,6 +62,7 @@ Map = {
 			});
 
 			infowindow.open(map,marker);
+			*/
 
 
 			//  ДОБАВЛЯЕМ МАРШРУТЫ START

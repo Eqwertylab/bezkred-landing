@@ -151,7 +151,7 @@
           <img src="dist/img/logo2.png" alt="" class="img-logo" alt="Безкредитофф. Антикредитные решения">
         </div>
         <div class="contact-header">
-          <div class="tel">
+          <div class="tel ya-phone">
             8&nbsp;(800)&nbsp;333-58-34
           </div>
           <div class="work-time">
@@ -632,6 +632,11 @@
   <!-- Карта -->
   <div class="map-wrap" id="contact">
     <h2>НАШИ КОНТАКТЫ</h2>
+    <div class="contacts">
+      <p>Санкт-Петербург <br>БЦ&nbsp;"Резон"&nbsp;ул.Всеволода&nbsp;Вишневского&nbsp;12а</p>
+      <p>График работы:<br> Пн-Пт, с 10:00 до 20:00</p>
+      <p>Почта: info@bezkreditoff.ru <span class="tel ya-phone">8 (800) 333-58-34</span></p>
+    </div>
     <div class="map" id="map"></div>
   </div>
 

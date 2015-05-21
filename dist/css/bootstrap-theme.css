@@ -857,13 +857,17 @@ textarea:hover::-ms-input-placeholder {
   font-size: 21px;
   text-align: center;
 }
+.map-wrap {
+  position: relative;
+}
 .map-wrap h2 {
   text-align: center;
   font-weight: bold;
 }
 .map-wrap .map {
-  height: 600px;
+  height: 300px;
   margin-top: 20px;
+  z-index: 10;
 }
 .map-wrap .tel {
   font-size: 25px;
@@ -872,6 +876,10 @@ textarea:hover::-ms-input-placeholder {
 }
 .map-wrap .marker {
   font-size: 15px;
+}
+.map-wrap .contacts {
+  padding: 0 15px;
+  z-index: 20;
 }
 .footer {
   padding: 20px 0;
@@ -938,6 +946,8 @@ textarea:hover::-ms-input-placeholder {
   padding-left: 40px;
   text-decoration: none;
   margin-top: 10px;
+  opacity: 0.3;
+  transition: 0.5s opacity;
 }
 .ql .ql__line1 {
   display: block;
@@ -950,6 +960,9 @@ textarea:hover::-ms-input-placeholder {
   font-size: 0.9em;
   line-height: 1em;
 }
+.ql:hover {
+  opacity: 1;
+}
 .snob {
   position: fixed;
   top: 75px;
@@ -957,6 +970,7 @@ textarea:hover::-ms-input-placeholder {
   width: 320px;
   overflow: hidden;
   right: -285px;
+  z-index: 30;
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
@@ -1114,10 +1128,10 @@ textarea:hover::-ms-input-placeholder {
     margin-top: 7px;
   }
   .navbar-nav > li > a {
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    padding: 15px 10px;
     line-height: 30px;
     color: black;
-    padding: 15px 10px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
   }
   .header-page {
     height: 135px;
@@ -1128,22 +1142,22 @@ textarea:hover::-ms-input-placeholder {
     margin-top: 12px;
   }
   .logo-header img {
-    padding: 0;
     float: left;
+    padding: 0;
   }
   .logo-header .logo-text {
-    text-align: left;
     margin-top: 20px;
+    text-align: left;
   }
   .contact-header .tel {
     font-size: 34px;
   }
   .promo1 {
+    padding-bottom: 50px;
     background-image: url('../img/bg-promo-form.jpg');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: auto 100%;
-    padding-bottom: 50px;
   }
   .promo1 .sign {
     font-size: 18px;
@@ -1159,24 +1173,24 @@ textarea:hover::-ms-input-placeholder {
     line-height: 137px;
   }
   .carousel-theme .slide2 {
+    padding-top: 18px;
     font-size: 40px;
     line-height: 44px;
-    padding-top: 18px;
   }
   .carousel-theme .slide3 {
+    padding-top: 13px;
     font-size: 34px;
     line-height: 34px;
-    padding-top: 13px;
   }
   .carousel-theme .slide4 {
+    padding-top: 9px;
     font-size: 40px;
     line-height: 38px;
-    padding-top: 9px;
   }
   .feedback1 {
     margin: 0;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px 1px #949494;
+    box-shadow: 0 0 15px 1px #949494;
   }
   .feedback1 .line2 {
     font-size: 23px;
@@ -1206,9 +1220,9 @@ textarea:hover::-ms-input-placeholder {
     line-height: 22px;
   }
   .promo3 .red-arroy {
+    right: 10px;
     bottom: -30px;
     height: 116px;
-    right: 10px;
   }
   .wego {
     padding: 0;
@@ -1241,8 +1255,8 @@ textarea:hover::-ms-input-placeholder {
     clear: both;
   }
   .dignity li {
-    list-style-type: none;
     margin: 35px 0;
+    list-style-type: none;
   }
   .dignity li:before,
   .dignity li:after {
@@ -1268,16 +1282,16 @@ textarea:hover::-ms-input-placeholder {
   }
   .wewin {
     margin: 0;
+    border: 1px solid #cdcdcd;
     border-radius: 10px;
-    border: 1px solid #CDCDCD;
-    box-shadow: 0px 0px 3px -1px rgba(148, 148, 148, 0.5);
+    box-shadow: 0 0 3px -1px rgba(148, 148, 148, 0.5);
   }
   .wewin img {
     float: left;
     margin-right: 20px;
   }
   .wewin q {
-    margin-top: 0px;
+    margin-top: 0;
   }
   .wewin .sign {
     font-size: 20px;
@@ -1287,20 +1301,20 @@ textarea:hover::-ms-input-placeholder {
     vertical-align: top;
   }
   .docs li {
-    list-style-type: none;
     display: inline-block;
     width: 176px;
     margin: 20px 85px;
+    list-style-type: none;
   }
   .docs .title {
     width: 300px;
     margin-left: -62px;
   }
   .promo7 h2 {
-    font-weight: bold;
-    font-size: 22px;
-    text-align: center;
     margin-top: 35px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
   }
   .review .carousel-inner {
     padding: 10px;
@@ -1319,24 +1333,24 @@ textarea:hover::-ms-input-placeholder {
     left: 15px;
   }
   .review .carousel-control.left {
-    left: -20px;
     top: 70px;
+    left: -20px;
   }
   .review .carousel-control.right {
-    right: -20px;
     top: 70px;
+    right: -20px;
   }
   .review .glyphicon {
     top: 100px;
-    padding: 10px;
     width: 50px;
     height: 50px;
+    padding: 10px;
   }
   .review .title {
-    text-align: left;
     width: 505px;
-    margin-left: 85px;
     padding: 10px 0 10px 50px;
+    margin-left: 85px;
+    text-align: left;
     background-image: url('../img/vk.gif');
     background-repeat: no-repeat;
     background-position: left center;
@@ -1358,66 +1372,66 @@ textarea:hover::-ms-input-placeholder {
     height: 395px;
   }
   .howWeWork li {
-    margin-bottom: 0px;
     position: absolute;
     width: 100px;
+    margin-bottom: 0;
   }
   .howWeWork .attr {
     float: none;
-    margin-right: 0px;
+    margin-right: 0;
   }
   .howWeWork .num {
-    float: none;
-    font-size: 50px;
-    left: 30px;
-    margin-right: 0px;
     position: absolute;
+    left: 30px;
+    float: none;
+    margin-right: 0;
+    font-size: 50px;
   }
   .howWeWork img {
     width: 45px;
   }
   .howWeWork .icon {
+    float: none;
     padding: 15px;
     border-radius: 75px;
-    float: none;
   }
   .howWeWork .title {
-    text-align: center;
     width: 130px;
-    margin-left: -20px;
     margin-top: 15px;
+    margin-left: -20px;
+    text-align: center;
   }
   .howWeWork .step1 {
-    left: -22px;
     top: 151px;
+    left: -22px;
   }
   .howWeWork .step1 .num {
     top: -80px;
   }
   .howWeWork .step2 {
-    left: 125px;
     top: 82px;
+    left: 125px;
   }
   .howWeWork .step2 .num {
     top: 205px;
   }
   .howWeWork .step3 {
-    left: 302px;
     top: 174px;
+    left: 302px;
   }
   .howWeWork .step3 .num {
     top: -81px;
   }
   .howWeWork .step4 {
-    left: 477px;
     top: 98px;
+    left: 477px;
   }
   .howWeWork .step4 .num {
     top: 148px;
   }
   .howWeWork .step5 {
-    left: 637px;
     top: 179px;
+    left: 637px;
   }
   .howWeWork .step5 .num {
     top: -79px;
@@ -1429,12 +1443,25 @@ textarea:hover::-ms-input-placeholder {
     font-size: 27px;
   }
   .map-wrap .tel {
-    font-size: 30px;
     display: block;
+    font-size: 30px;
     text-align: center;
   }
   .map-wrap .marker {
     font-size: 17px;
+  }
+  .map-wrap .map {
+    height: 600px;
+  }
+  .map-wrap .contacts {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 350px;
+    padding: 25px 25px 15px;
+    margin-left: -175px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
   }
   .logo-footer .logo-title {
     font-size: 18px;
